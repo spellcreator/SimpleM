@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SimpleM",
+			"Path": "D:\\UEProj\\NextGen\\SimpleM\\Source\\SimpleM.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SimpleMEditor",
+			"Path": "D:\\UEProj\\NextGen\\SimpleM\\Source\\SimpleMEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

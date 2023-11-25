@@ -1,0 +1,25 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ueproj\\nextgen\\simplem\\source\\simplem\\private\\assets\\myinputconfigdata.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\x64\\simplemeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\simplem\\definitions.simplem.h",
+            "d:\\ueproj\\nextgen\\simplem\\source\\simplem\\public\\assets\\myinputconfigdata.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputaction.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputmodifiers.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputactionvalue.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputactionvalue.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputmodifiers.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputtriggers.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputtriggers.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputaction.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputmappingquery.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputmappingquery.generated.h",
+            "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\myinputconfigdata.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

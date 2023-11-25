@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\myhud.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\x64\\simplemeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\simplem\\definitions.simplem.h",
+            "d:\\ueproj\\nextgen\\simplem\\source\\simplem\\public\\ui\\myhud.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\gameframework\\hud.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\gameframework\\hudhitbox.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\gameframework\\debugtextinfo.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\debugtextinfo.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\hud.generated.h",
+            "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\myhud.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ueproj\\nextgen\\simplem\\source\\simplem\\private\\components\\smstatuseffectcomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\x64\\simplemeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\simplem\\definitions.simplem.h",
+            "d:\\ueproj\\nextgen\\simplem\\source\\simplem\\public\\components\\smstatuseffectcomponent.h",
+            "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\smstatuseffectcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

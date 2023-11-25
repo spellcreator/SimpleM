@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-SimpleM.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\Module.SimpleM.cpp.obj"
+"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\Default.rc2.res"
+/OUT:"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\UnrealEditor-SimpleM.lib"
