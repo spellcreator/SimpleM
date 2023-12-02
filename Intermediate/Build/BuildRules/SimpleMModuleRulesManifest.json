@@ -1,15 +1,15 @@
 {
 	"SourceFiles": [
-		"D:\\UEProj\\NextGen\\SimpleM\\Source\\SimpleM\\SimpleM.Build.cs",
-		"D:\\UEProj\\NextGen\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.Build.cs",
-		"D:\\UEProj\\NextGen\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\RiderBlueprint.Build.cs",
-		"D:\\UEProj\\NextGen\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderGameControl\\RiderGameControl.Build.cs",
-		"D:\\UEProj\\NextGen\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderLC\\RiderLC.Build.cs",
-		"D:\\UEProj\\NextGen\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\RiderLink.Build.cs",
-		"D:\\UEProj\\NextGen\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\RiderLogging.Build.cs",
-		"D:\\UEProj\\NextGen\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderShaderInfo\\RiderShaderInfo.Build.cs",
-		"D:\\UEProj\\NextGen\\SimpleM\\Source\\SimpleM.Target.cs",
-		"D:\\UEProj\\NextGen\\SimpleM\\Source\\SimpleMEditor.Target.cs"
+		"C:\\Users\\andr\\Documents\\SimpleM\\Source\\SimpleM\\SimpleM.Build.cs",
+		"C:\\Users\\andr\\Documents\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\RiderLink.Build.cs",
+		"C:\\Users\\andr\\Documents\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderLC\\RiderLC.Build.cs",
+		"C:\\Users\\andr\\Documents\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprint\\RiderBlueprint.Build.cs",
+		"C:\\Users\\andr\\Documents\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderGameControl\\RiderGameControl.Build.cs",
+		"C:\\Users\\andr\\Documents\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderLogging\\RiderLogging.Build.cs",
+		"C:\\Users\\andr\\Documents\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.Build.cs",
+		"C:\\Users\\andr\\Documents\\SimpleM\\Plugins\\Developer\\RiderLink\\Source\\RiderShaderInfo\\RiderShaderInfo.Build.cs",
+		"C:\\Users\\andr\\Documents\\SimpleM\\Source\\SimpleM.Target.cs",
+		"C:\\Users\\andr\\Documents\\SimpleM\\Source\\SimpleMEditor.Target.cs"
 	],
 	"EngineVersion": "5.2.1"
 }

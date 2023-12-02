@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "SimpleM",
-			"Path": "D:\\UEProj\\NextGen\\SimpleM\\Source\\SimpleM.Target.cs",
+			"Path": "C:\\Users\\andr\\Documents\\SimpleM\\Source\\SimpleM.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "SimpleMEditor",
-			"Path": "D:\\UEProj\\NextGen\\SimpleM\\Source\\SimpleMEditor.Target.cs",
+			"Path": "C:\\Users\\andr\\Documents\\SimpleM\\Source\\SimpleMEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

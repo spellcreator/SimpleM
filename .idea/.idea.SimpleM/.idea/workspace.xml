@@ -7,32 +7,73 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c721489-b920-4ff0-b3b5-2f34da112703" name="Changes" comment="" />
+    <list default="true" id="9c721489-b920-4ff0-b3b5-2f34da112703" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRules/SimpleMModuleRules.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRules/SimpleMModuleRules.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRules/SimpleMModuleRules.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRules/SimpleMModuleRules.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/BuildRules/SimpleMModuleRulesManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/BuildRules/SimpleMModuleRulesManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Win64/Development/Editor/SimpleM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/.Rider/Win64/Development/Editor/UE5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/SimpleM.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/SimpleM.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/SimpleM.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/SimpleM.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE5.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE5.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE5.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE5.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/TargetInfo.SimpleM.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/TargetInfo.SimpleM.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/TargetInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/TargetInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/AutoScreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/AutoScreenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/SimpleM-backup-2023.11.23-17.20.19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/SimpleM-backup-2023.11.23-17.20.48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/SimpleM-backup-2023.11.23-17.26.49.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/SimpleM.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/SimpleM.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/SimpleM_2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/SimpleM_2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleM.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleM.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/SimpleM/Private/Player/SMBasePlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/SimpleM/Private/Player/SMBasePlayerController.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2XiQPIBWldhNvWvXBgCru629arg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Yasen\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Yasen\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Yasen\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\andr\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\andr\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\andr\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -127,10 +168,20 @@
       <workItem from="1700396725068" duration="5495000" />
       <workItem from="1700755814523" duration="2943000" />
       <workItem from="1700759023767" duration="2857000" />
+      <workItem from="1701539034674" duration="551000" />
+      <workItem from="1701539605348" duration="608000" />
+      <workItem from="1701541894801" duration="543000" />
+      <workItem from="1701542746873" duration="459000" />
+      <workItem from="1701543274487" duration="137000" />
+      <workItem from="1701543626351" duration="37000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

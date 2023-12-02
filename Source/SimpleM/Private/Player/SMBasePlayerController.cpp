@@ -2,8 +2,8 @@
 
 
 #include "Player/SMBasePlayerController.h"
-#include "GameFramework/PlayerInput.h"
 #include "Engine/Engine.h"
+#include "GameFramework/PlayerInput.h"
 
 
 void ASMBasePlayerController::YourFunctionToShowOrHideCursor(bool bShouldShowCursor)
