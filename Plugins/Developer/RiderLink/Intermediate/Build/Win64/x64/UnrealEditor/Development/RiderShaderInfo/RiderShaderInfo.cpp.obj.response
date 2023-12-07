@@ -1,4 +1,4 @@
-D:\UEProj\NextGen\SimpleM\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.cpp
+D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.cpp
 /I .
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -7,7 +7,7 @@ D:\UEProj\NextGen\SimpleM\Plugins\Developer\RiderLink\Source\RiderShaderInfo\Rid
 /I Runtime\Json\Public
 /I Runtime\RenderCore\Public
 /I Runtime\RHI\Public
-/I D:\UEProj\NextGen\SimpleM\Plugins\Developer\RiderLink\Source
+/I D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Source
 /external:W0
 /external:I ThirdParty\mimalloc\include
 /external:I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\INCLUDE"
@@ -15,9 +15,9 @@ D:\UEProj\NextGen\SimpleM\Plugins\Developer\RiderLink\Source\RiderShaderInfo\Rid
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\UEProj\NextGen\SimpleM\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderShaderInfo\Definitions.h"
-/Fo"D:\UEProj\NextGen\SimpleM\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderShaderInfo\RiderShaderInfo.cpp.obj"
-/sourceDependencies D:\UEProj\NextGen\SimpleM\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderShaderInfo\RiderShaderInfo.cpp.dep.json
+/FI"D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderShaderInfo\Definitions.h"
+/Fo"D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderShaderInfo\RiderShaderInfo.cpp.obj"
+/sourceDependencies D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderShaderInfo\RiderShaderInfo.cpp.dep.json
 /Zc:inline
 /nologo
 /Oi

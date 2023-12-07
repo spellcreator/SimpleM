@@ -1,4 +1,4 @@
-D:\UEProj\NextGen\SimpleM\Source\SimpleM\Private\SMBaseCharacter.cpp
+D:\UEProj\NextGen\SimpleM\Source\SimpleM\Private\Player\SMBaseCharacter.cpp
 /I .
 /I D:\UEProj\NextGen\SimpleM\Source\SimpleM\Private
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
@@ -274,6 +274,7 @@ D:\UEProj\NextGen\SimpleM\Source\SimpleM\Private\SMBaseCharacter.cpp
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
 /I D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\UnrealEditor\Inc\SimpleM\UHT
+/I D:\UEProj\NextGen\SimpleM\Source\SimpleM\Public\Player
 /I D:\UEProj\NextGen\SimpleM\Source\SimpleM\Public\Components
 /I D:\UEProj\NextGen\SimpleM\Source\SimpleM\Public\Assets
 /I D:\UEProj\NextGen\SimpleM\Source

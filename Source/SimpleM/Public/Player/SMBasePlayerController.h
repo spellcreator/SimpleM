@@ -15,10 +15,15 @@ class SIMPLEM_API ASMBasePlayerController : public APlayerController
 	GENERATED_BODY()
 
 public:
-	void YourFunctionToShowOrHideCursor(bool bShouldShowCursor);
-	void SetTrue() {return YourFunctionToShowOrHideCursor(true);}
-	void SetFalse() {return YourFunctionToShowOrHideCursor(false);}
+	void ShowCursor();
+	void HideCursor();
+	void MakeHit(FHitResult& HitResult, const FVector& TraceStart, const FVector& TraceEnd);
+	FVector2D GetCurrentMousePosition();
 
-	
 	bool showcurs = false;
+
+private:
+	void YourFunctionToShowOrHideCursor(bool CurrentCursorState);
+
+	FVector2d CurrentCursorPosition;
 };

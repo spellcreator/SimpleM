@@ -59,54 +59,31 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 		*(bool*)Z_Param__Result=P_THIS->IsRunning();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(ASMBaseCharacter::execEndFire)
+	DEFINE_FUNCTION(ASMBaseCharacter::execOnClickEnd)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->EndFire();
+		P_THIS->OnClickEnd();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(ASMBaseCharacter::execStartFire)
+	DEFINE_FUNCTION(ASMBaseCharacter::execOnClickStart)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->StartFire();
+		P_THIS->OnClickStart();
 		P_NATIVE_END;
 	}
 	void ASMBaseCharacter::StaticRegisterNativesASMBaseCharacter()
 	{
 		UClass* Class = ASMBaseCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "EndFire", &ASMBaseCharacter::execEndFire },
 			{ "IsRunning", &ASMBaseCharacter::execIsRunning },
+			{ "OnClickEnd", &ASMBaseCharacter::execOnClickEnd },
+			{ "OnClickStart", &ASMBaseCharacter::execOnClickStart },
 			{ "OnOverlapBegin", &ASMBaseCharacter::execOnOverlapBegin },
 			{ "OnOverlapEnd", &ASMBaseCharacter::execOnOverlapEnd },
-			{ "StartFire", &ASMBaseCharacter::execStartFire },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_ASMBaseCharacter_EndFire_Statics
-	{
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASMBaseCharacter_EndFire_Statics::Function_MetaDataParams[] = {
-		{ "Category", "PlayerMovement" },
-		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASMBaseCharacter_EndFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASMBaseCharacter, nullptr, "EndFire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASMBaseCharacter_EndFire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASMBaseCharacter_EndFire_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ASMBaseCharacter_EndFire()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASMBaseCharacter_EndFire_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ASMBaseCharacter_IsRunning_Statics
 	{
@@ -143,6 +120,52 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASMBaseCharacter_IsRunning_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::Function_MetaDataParams[] = {
+		{ "Category", "PlayerMovement" },
+		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASMBaseCharacter, nullptr, "OnClickEnd", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::Function_MetaDataParams[] = {
+		{ "Category", "PlayerMovement" },
+		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASMBaseCharacter, nullptr, "OnClickStart", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ASMBaseCharacter_OnClickStart()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -287,29 +310,6 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_ASMBaseCharacter_StartFire_Statics
-	{
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASMBaseCharacter_StartFire_Statics::Function_MetaDataParams[] = {
-		{ "Category", "PlayerMovement" },
-		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASMBaseCharacter_StartFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASMBaseCharacter, nullptr, "StartFire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASMBaseCharacter_StartFire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASMBaseCharacter_StartFire_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ASMBaseCharacter_StartFire()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASMBaseCharacter_StartFire_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ASMBaseCharacter);
 	UClass* Z_Construct_UClass_ASMBaseCharacter_NoRegister()
 	{
@@ -396,11 +396,11 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_SimpleM,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASMBaseCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ASMBaseCharacter_EndFire, "EndFire" }, // 3271257359
 		{ &Z_Construct_UFunction_ASMBaseCharacter_IsRunning, "IsRunning" }, // 314691178
+		{ &Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd, "OnClickEnd" }, // 1328073431
+		{ &Z_Construct_UFunction_ASMBaseCharacter_OnClickStart, "OnClickStart" }, // 476108788
 		{ &Z_Construct_UFunction_ASMBaseCharacter_OnOverlapBegin, "OnOverlapBegin" }, // 3523930218
 		{ &Z_Construct_UFunction_ASMBaseCharacter_OnOverlapEnd, "OnOverlapEnd" }, // 3653267020
-		{ &Z_Construct_UFunction_ASMBaseCharacter_StartFire, "StartFire" }, // 3746498075
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseCharacter_Statics::Class_MetaDataParams[] = {
@@ -584,15 +584,15 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ASMBaseCharacter);
 	ASMBaseCharacter::~ASMBaseCharacter() {}
-	struct Z_CompiledInDeferFile_FID_SimpleM_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics
+	struct Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SimpleM_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASMBaseCharacter, ASMBaseCharacter::StaticClass, TEXT("ASMBaseCharacter"), &Z_Registration_Info_UClass_ASMBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMBaseCharacter), 15776373U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_ASMBaseCharacter, ASMBaseCharacter::StaticClass, TEXT("ASMBaseCharacter"), &Z_Registration_Info_UClass_ASMBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMBaseCharacter), 3134204277U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SimpleM_Source_SimpleM_Public_Player_SMBaseCharacter_h_2478547168(TEXT("/Script/SimpleM"),
-		Z_CompiledInDeferFile_FID_SimpleM_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SimpleM_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_2875645970(TEXT("/Script/SimpleM"),
+		Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

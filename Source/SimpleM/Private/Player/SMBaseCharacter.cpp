@@ -109,24 +109,26 @@ void ASMBaseCharacter::BeginPlay()
 	// Делаем на старте скорость равную хотьбе
 	PlayerSpeed = WalkSpeed;
 	CharacterMovementComponent->MaxWalkSpeed = PlayerSpeed;
-	
 }
 
 
 
-void ASMBaseCharacter::StartFire()
+void ASMBaseCharacter::OnClickStart()
 {
+
+	FHitResult HitResult;
 	//WeaponComponent->Fire();
-	//Contoller->YourFunctionToShowOrHideCursor(false);
-	Contoller->bShowMouseCursor = false;
+	Contoller->ShowCursor();
+	//Contoller->bShowMouseCursor = true;
 	
 }
 
-void ASMBaseCharacter::EndFire()
+void ASMBaseCharacter::OnClickEnd()
 {
-	//Contoller->YourFunctionToShowOrHideCursor(true);
+	Contoller->HideCursor();
+	
 	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("АГСЛ НЩГ")));
-	Contoller->bShowMouseCursor = true;
+	//Contoller->bShowMouseCursor = false;
 }
 
 
@@ -149,18 +151,12 @@ bool ASMBaseCharacter::IsRunning() const
 void ASMBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	//получаем контроллер  
-	APlayerController* PC = Cast<APlayerController>(GetController());
-
-	// показ курсор
-	//if (Contoller)
-	//{
-	//	Contoller->bShowMouseCursor = true; 
-	//	Contoller->bEnableClickEvents = true; 
-	//	Contoller->bEnableMouseOverEvents = true;
-	//}
+	//APlayerController* PC = Cast<APlayerController>(GetController());
+	Contoller = Cast<ASMBasePlayerController>(Cast<APlayerController>(GetController()));
+	
 	
 	//создаем сабсистему 
-	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
+	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(Contoller->GetLocalPlayer());
 	Subsystem->ClearAllMappings();
 	Subsystem->AddMappingContext(InputMapping, 0);
 	
@@ -176,8 +172,8 @@ void ASMBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Pei->BindAction(InputActions->InputSprint,ETriggerEvent::Completed,this, &ASMBaseCharacter::EndSprint);
 	Pei->BindAction(InputActions->InputOpenDoor,ETriggerEvent::Triggered,this, &ASMBaseCharacter::OpenDoorAction);
 	//Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,WeaponComponent, &USMWeaponComponent::Fire);
-	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,this, &ASMBaseCharacter::StartFire);
-	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Completed,this, &ASMBaseCharacter::EndFire);
+	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,this, &ASMBaseCharacter::OnClickStart);
+	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Completed,this, &ASMBaseCharacter::OnClickEnd);
 	
 	Pei->BindAction(InputActions->InputLookArmLength,ETriggerEvent::Triggered,this, &ASMBaseCharacter::SpringArmLength);
 }

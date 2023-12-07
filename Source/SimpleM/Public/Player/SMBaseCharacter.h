@@ -30,10 +30,10 @@ public:
 	
 	
 	UFUNCTION(BlueprintCallable, Category= "PlayerMovement")
-	void StartFire();
+	void OnClickStart();
 	
 	UFUNCTION(BlueprintCallable, Category= "PlayerMovement")
-	void EndFire();
+	void OnClickEnd();
 	
 	
 	UFUNCTION(BlueprintCallable, Category= "PlayerMovement")

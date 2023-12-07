@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\stu_playerhudwidget.gen.cpp",
+        "Source": "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\stu_playerhudwidget.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\x64\\simplemeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "PCH": "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\x64\\simplemeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
         "Includes": [
-            "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\simplem\\definitions.simplem.h",
-            "d:\\ueproj\\nextgen\\simplem\\source\\simplem\\public\\ui\\stu_playerhudwidget.h",
+            "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\simplem\\definitions.simplem.h",
+            "d:\\ueproj\\nextgen\\nextgen\\source\\simplem\\public\\ui\\stu_playerhudwidget.h",
             "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\umg\\public\\blueprint\\userwidget.h",
             "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\coreuobject\\public\\uobject\\objectsavecontext.h",
             "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\umg\\public\\components\\slatewrappertypes.h",
@@ -163,7 +163,7 @@
             "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetanimationbinding.generated.h",
             "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetanimation.generated.h",
             "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\userwidget.generated.h",
-            "d:\\ueproj\\nextgen\\simplem\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\stu_playerhudwidget.generated.h"
+            "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\stu_playerhudwidget.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

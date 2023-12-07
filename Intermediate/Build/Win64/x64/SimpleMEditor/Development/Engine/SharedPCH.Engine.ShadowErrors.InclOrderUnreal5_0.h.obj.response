@@ -1,4 +1,4 @@
-D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.cpp
+D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.cpp
 /I .
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
 /I ..\Shaders\Shared
@@ -286,10 +286,10 @@ D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/Yc"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
-/Fp"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.pch"
-/Fo"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.obj"
-/sourceDependencies D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.dep.json
+/Yc"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
+/Fp"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.pch"
+/Fo"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.obj"
+/sourceDependencies D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.dep.json
 /Zc:inline
 /nologo
 /Oi

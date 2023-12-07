@@ -6,25 +6,40 @@
 #include "Engine/Engine.h"
 
 
-void ASMBasePlayerController::YourFunctionToShowOrHideCursor(bool bShouldShowCursor)
+void ASMBasePlayerController::YourFunctionToShowOrHideCursor(bool CurrentCursorState)
 {
-	//APlayerController* PC = Cast<APlayerController>(GetController());
-	bShowMouseCursor = bShouldShowCursor;
-	bEnableClickEvents = bShouldShowCursor; 
-	bEnableMouseOverEvents = bShouldShowCursor;
-	showcurs = bShouldShowCursor;
-
-
-	int32 Width, Height;
-	GetViewportSize(Width, Height);
-
-	float ScreenCenterX = Width / 2.0f;
-	float ScreenCenterY = Height / 2.0f;
-	//SetIgnoreLookInput(true);
-	if (GetMousePosition(reinterpret_cast<float&>(Width), reinterpret_cast<float&>(Height)))
-	{
-		SetMouseLocation(ScreenCenterX, ScreenCenterY);
-	}
-	//PC->GetMousePosition(reinterpret_cast<float&>(Width), reinterpret_cast<float&>(Height));
-
+	bShowMouseCursor = !CurrentCursorState;
+	bEnableClickEvents = CurrentCursorState; 
+	bEnableMouseOverEvents = CurrentCursorState;
+	showcurs = CurrentCursorState;
 }
+
+void ASMBasePlayerController::ShowCursor()
+{
+	YourFunctionToShowOrHideCursor(true);
+	CurrentCursorPosition = GetCurrentMousePosition();
+}
+
+void ASMBasePlayerController::HideCursor()
+{
+	YourFunctionToShowOrHideCursor(false);
+	SetMouseLocation(CurrentCursorPosition.X,CurrentCursorPosition.Y);
+}
+
+void ASMBasePlayerController::MakeHit(FHitResult& HitResult, const FVector& TraceStart, const FVector& TraceEnd)
+{
+	if(!GetWorld()) return;
+	FCollisionQueryParams CollisionParams;
+	CollisionParams.AddIgnoredActor(GetOwner());
+
+	GetWorld()->LineTraceSingleByChannel(HitResult,TraceStart, TraceEnd, ECC_Visibility, CollisionParams);
+}
+
+FVector2D ASMBasePlayerController::GetCurrentMousePosition()
+{
+	float MouseX;
+	float MouseY;
+	GetMousePosition(MouseX, MouseY);
+	return FVector2D(MouseX, MouseY); 
+}
+

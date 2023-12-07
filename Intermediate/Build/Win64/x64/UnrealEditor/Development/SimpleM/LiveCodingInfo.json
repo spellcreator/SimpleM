@@ -2,6 +2,21 @@
 	"RemapUnityFiles": 
 	{
 		"Module.SimpleM.cpp.obj": [
+			"MyInputConfigData.cpp.obj",
+			"SMCharacterMovementComponent.cpp.obj",
+			"SMHealthComponent.cpp.obj",
+			"SMStatusEffectComponent.cpp.obj",
+			"SMWeaponComponent.cpp.obj",
+			"FireDamageType.cpp.obj",
+			"DevDagameActor.cpp.obj",
+			"SMGameModeBase.cpp.obj",
+			"MyHUD.cpp.obj",
+			"STU_PlayerHUDWidget.cpp.obj",
+			"SMBaseWeapon.cpp.obj",
+			"SMProjectile.cpp.obj",
+			"SMThrowWeapon.cpp.obj",
+			"SMSwingDoor.cpp.obj",
+			"SimpleM.cpp.obj",
 			"DevDagameActor.gen.cpp.obj",
 			"FireDamageType.gen.cpp.obj",
 			"MyHUD.gen.cpp.obj",
@@ -19,23 +34,8 @@
 			"SMThrowWeapon.gen.cpp.obj",
 			"SMWeaponComponent.gen.cpp.obj",
 			"STU_PlayerHUDWidget.gen.cpp.obj",
-			"MyInputConfigData.cpp.obj",
-			"SMCharacterMovementComponent.cpp.obj",
-			"SMHealthComponent.cpp.obj",
-			"SMStatusEffectComponent.cpp.obj",
-			"SMWeaponComponent.cpp.obj",
-			"FireDamageType.cpp.obj",
-			"DevDagameActor.cpp.obj",
-			"SMGameModeBase.cpp.obj",
 			"SMBaseCharacter.cpp.obj",
-			"SMBasePlayerController.cpp.obj",
-			"MyHUD.cpp.obj",
-			"STU_PlayerHUDWidget.cpp.obj",
-			"SMBaseWeapon.cpp.obj",
-			"SMProjectile.cpp.obj",
-			"SMThrowWeapon.cpp.obj",
-			"SMSwingDoor.cpp.obj",
-			"SimpleM.cpp.obj"
+			"SMBasePlayerController.cpp.obj"
 		]
 	}
 }
