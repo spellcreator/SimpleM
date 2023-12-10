@@ -1,6 +1,6 @@
-D:\UEProj\NextGen\SimpleM\Source\SimpleM\Private\UI\STU_PlayerHUDWidget.cpp
+D:\UEProj\NextGen\NextGen\Source\SimpleM\Private\UI\STU_PlayerHUDWidget.cpp
 /I .
-/I D:\UEProj\NextGen\SimpleM\Source\SimpleM\Private
+/I D:\UEProj\NextGen\NextGen\Source\SimpleM\Private
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT
 /I ..\Shaders\Shared
 /I Runtime\Engine\Classes
@@ -273,12 +273,12 @@ D:\UEProj\NextGen\SimpleM\Source\SimpleM\Private\UI\STU_PlayerHUDWidget.cpp
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
-/I D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\UnrealEditor\Inc\SimpleM\UHT
-/I D:\UEProj\NextGen\SimpleM\Source\SimpleM\Public\Player
-/I D:\UEProj\NextGen\SimpleM\Source\SimpleM\Public\Components
-/I D:\UEProj\NextGen\SimpleM\Source\SimpleM\Public\Assets
-/I D:\UEProj\NextGen\SimpleM\Source
-/I D:\UEProj\NextGen\SimpleM\Source\SimpleM\Public
+/I D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\UnrealEditor\Inc\SimpleM\UHT
+/I D:\UEProj\NextGen\NextGen\Source\SimpleM\Public\Player
+/I D:\UEProj\NextGen\NextGen\Source\SimpleM\Public\Components
+/I D:\UEProj\NextGen\NextGen\Source\SimpleM\Public\Assets
+/I D:\UEProj\NextGen\NextGen\Source
+/I D:\UEProj\NextGen\NextGen\Source\SimpleM\Public
 /I ..\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\UHT
 /I ..\Plugins\EnhancedInput\Source\EnhancedInput\Public
 /I ..\Plugins\EnhancedInput\Source
@@ -291,12 +291,12 @@ D:\UEProj\NextGen\SimpleM\Source\SimpleM\Private\UI\STU_PlayerHUDWidget.cpp
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
-/FI"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\Definitions.SimpleM.h"
-/Yu"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
-/Fp"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.pch"
-/Fo"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\STU_PlayerHUDWidget.cpp.lc.obj"
-/sourceDependencies"D:\UEProj\NextGen\SimpleM\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\STU_PlayerHUDWidget.cpp.dep.lc.json"
+/FI"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
+/FI"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\Definitions.SimpleM.h"
+/Yu"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h"
+/Fp"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.pch"
+/Fo"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\STU_PlayerHUDWidget.cpp.lc.obj"
+/sourceDependencies"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\STU_PlayerHUDWidget.cpp.dep.lc.json"
 /Zc:inline
 /nologo
 /Oi

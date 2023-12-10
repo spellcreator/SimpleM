@@ -36,6 +36,11 @@ void USMTargetSystem::SetSelectedTarget(AActor* NewTarget)
 	
 }
 
+AActor* USMTargetSystem::GetCurrentTarget() const
+{
+	return SelectedTarget;
+}
+
 void USMTargetSystem::BeginPlay()
 {
 	Super::BeginPlay();

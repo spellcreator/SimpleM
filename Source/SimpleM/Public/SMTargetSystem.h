@@ -19,6 +19,7 @@ public:
 	
 	bool HasPlayerController(AActor* Actor);
 	void SetSelectedTarget(AActor* NewTarget);
+	AActor* GetCurrentTarget() const;
 
 
 protected:

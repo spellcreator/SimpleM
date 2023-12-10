@@ -15,5 +15,8 @@ class SIMPLEM_API USTU_PlayerHUDWidget : public UUserWidget
 	GENERATED_BODY()
 public:
 	UFUNCTION(BlueprintCallable, Category="UI")
-	float GetHealthPercent() const;
+	float GetHealthPercent(AActor* Player) const;
+	UFUNCTION(BlueprintCallable, Category="UI")
+	AActor* GetActorTarget();
+	
 };

@@ -8,11 +8,6 @@
 /NODEFAULTLIB
 "D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\SimpleMEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_0.h.obj"
 "D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\Module.SimpleM.cpp.obj"
-"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\SMTargetSystem.cpp.obj"
-"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\SMBaseCharacter.cpp.obj"
-"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\SMBasePlayerController.cpp.obj"
-"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\SimpleM.init.gen.cpp.obj"
-"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\SMBaseCharacter.gen.cpp.obj"
-"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\SMBasePlayerController.gen.cpp.obj"
+"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\STU_PlayerHUDWidget.cpp.obj"
 "D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\Default.rc2.res"
 /OUT:"D:\UEProj\NextGen\NextGen\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimpleM\UnrealEditor-SimpleM.lib"

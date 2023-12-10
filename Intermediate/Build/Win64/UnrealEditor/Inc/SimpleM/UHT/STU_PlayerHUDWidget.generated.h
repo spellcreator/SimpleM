@@ -9,6 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef SIMPLEM_STU_PlayerHUDWidget_generated_h
 #error "STU_PlayerHUDWidget.generated.h already included, missing '#pragma once' in STU_PlayerHUDWidget.h"
 #endif
@@ -17,11 +18,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_NextGen_Source_SimpleM_Public_UI_STU_PlayerHUDWidget_h_15_SPARSE_DATA
 #define FID_NextGen_Source_SimpleM_Public_UI_STU_PlayerHUDWidget_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetActorTarget); \
 	DECLARE_FUNCTION(execGetHealthPercent);
 
 
 #define FID_NextGen_Source_SimpleM_Public_UI_STU_PlayerHUDWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetActorTarget); \
 	DECLARE_FUNCTION(execGetHealthPercent);
 
 
