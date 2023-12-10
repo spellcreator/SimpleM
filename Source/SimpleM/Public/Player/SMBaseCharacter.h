@@ -17,6 +17,7 @@ class USMHealthComponent;
 class ASMSwingDoor;
 class USMWeaponComponent;
 class ASMBasePlayerController;
+class USMTargetSystem;
 
 UCLASS()
 class SIMPLEM_API ASMBaseCharacter : public ACharacter
@@ -30,14 +31,10 @@ public:
 	
 	
 	UFUNCTION(BlueprintCallable, Category= "PlayerMovement")
-	void OnClickStart();
-	
-	UFUNCTION(BlueprintCallable, Category= "PlayerMovement")
-	void OnClickEnd();
-	
-	
-	UFUNCTION(BlueprintCallable, Category= "PlayerMovement")
 	bool IsRunning() const;
+
+	UPROPERTY(VisibleAnywhere, Category="Target")
+	USMTargetSystem* TargetSystem;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Character")
 	USpringArmComponent* SpringArmComponent;

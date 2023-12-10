@@ -17,27 +17,23 @@ struct FHitResult;
 #endif
 #define SIMPLEM_SMBaseCharacter_generated_h
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_SPARSE_DATA
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_RPC_WRAPPERS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_SPARSE_DATA
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
 	DECLARE_FUNCTION(execOnOverlapBegin); \
-	DECLARE_FUNCTION(execIsRunning); \
-	DECLARE_FUNCTION(execOnClickEnd); \
-	DECLARE_FUNCTION(execOnClickStart);
+	DECLARE_FUNCTION(execIsRunning);
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
 	DECLARE_FUNCTION(execOnOverlapBegin); \
-	DECLARE_FUNCTION(execIsRunning); \
-	DECLARE_FUNCTION(execOnClickEnd); \
-	DECLARE_FUNCTION(execOnClickStart);
+	DECLARE_FUNCTION(execIsRunning);
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_ACCESSORS
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_INCLASS_NO_PURE_DECLS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_ACCESSORS
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASMBaseCharacter(); \
 	friend struct Z_Construct_UClass_ASMBaseCharacter_Statics; \
@@ -46,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(ASMBaseCharacter)
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_INCLASS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_INCLASS \
 private: \
 	static void StaticRegisterNativesASMBaseCharacter(); \
 	friend struct Z_Construct_UClass_ASMBaseCharacter_Statics; \
@@ -55,7 +51,7 @@ public: \
 	DECLARE_SERIALIZER(ASMBaseCharacter)
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_STANDARD_CONSTRUCTORS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASMBaseCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASMBaseCharacter) \
@@ -69,7 +65,7 @@ public: \
 	NO_API virtual ~ASMBaseCharacter();
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_ENHANCED_CONSTRUCTORS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASMBaseCharacter(ASMBaseCharacter&&); \
@@ -81,27 +77,27 @@ public: \
 	NO_API virtual ~ASMBaseCharacter();
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_21_PROLOG
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_GENERATED_BODY_LEGACY \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_22_PROLOG
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_SPARSE_DATA \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_RPC_WRAPPERS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_ACCESSORS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_INCLASS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_STANDARD_CONSTRUCTORS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_SPARSE_DATA \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_RPC_WRAPPERS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_ACCESSORS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_INCLASS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_GENERATED_BODY \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_SPARSE_DATA \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_ACCESSORS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_INCLASS_NO_PURE_DECLS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_24_ENHANCED_CONSTRUCTORS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_SPARSE_DATA \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_ACCESSORS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_INCLASS_NO_PURE_DECLS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

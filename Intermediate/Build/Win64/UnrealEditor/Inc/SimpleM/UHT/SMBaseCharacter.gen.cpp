@@ -25,6 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMSwingDoor_NoRegister();
 	SIMPLEM_API UClass* Z_Construct_UClass_UMyInputConfigData_NoRegister();
 	SIMPLEM_API UClass* Z_Construct_UClass_USMHealthComponent_NoRegister();
+	SIMPLEM_API UClass* Z_Construct_UClass_USMTargetSystem_NoRegister();
 	SIMPLEM_API UClass* Z_Construct_UClass_USMWeaponComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_SimpleM();
 // End Cross Module References
@@ -59,27 +60,11 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 		*(bool*)Z_Param__Result=P_THIS->IsRunning();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(ASMBaseCharacter::execOnClickEnd)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->OnClickEnd();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(ASMBaseCharacter::execOnClickStart)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->OnClickStart();
-		P_NATIVE_END;
-	}
 	void ASMBaseCharacter::StaticRegisterNativesASMBaseCharacter()
 	{
 		UClass* Class = ASMBaseCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "IsRunning", &ASMBaseCharacter::execIsRunning },
-			{ "OnClickEnd", &ASMBaseCharacter::execOnClickEnd },
-			{ "OnClickStart", &ASMBaseCharacter::execOnClickStart },
 			{ "OnOverlapBegin", &ASMBaseCharacter::execOnOverlapBegin },
 			{ "OnOverlapEnd", &ASMBaseCharacter::execOnOverlapEnd },
 		};
@@ -120,52 +105,6 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASMBaseCharacter_IsRunning_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics
-	{
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::Function_MetaDataParams[] = {
-		{ "Category", "PlayerMovement" },
-		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASMBaseCharacter, nullptr, "OnClickEnd", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics
-	{
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::Function_MetaDataParams[] = {
-		{ "Category", "PlayerMovement" },
-		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASMBaseCharacter, nullptr, "OnClickStart", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ASMBaseCharacter_OnClickStart()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASMBaseCharacter_OnClickStart_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -327,6 +266,10 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_Contoller;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_TargetSystem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetSystem;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpringArmComponent_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArmComponent;
@@ -397,8 +340,6 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ASMBaseCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ASMBaseCharacter_IsRunning, "IsRunning" }, // 314691178
-		{ &Z_Construct_UFunction_ASMBaseCharacter_OnClickEnd, "OnClickEnd" }, // 1328073431
-		{ &Z_Construct_UFunction_ASMBaseCharacter_OnClickStart, "OnClickStart" }, // 476108788
 		{ &Z_Construct_UFunction_ASMBaseCharacter_OnOverlapBegin, "OnOverlapBegin" }, // 3523930218
 		{ &Z_Construct_UFunction_ASMBaseCharacter_OnOverlapEnd, "OnOverlapEnd" }, // 3653267020
 	};
@@ -417,6 +358,14 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_Contoller = { "Contoller", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseCharacter, Contoller), Z_Construct_UClass_ASMBasePlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_Contoller_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_Contoller_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetSystem_MetaData[] = {
+		{ "Category", "Target" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetSystem = { "TargetSystem", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseCharacter, TargetSystem), Z_Construct_UClass_USMTargetSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetSystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetSystem_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_SpringArmComponent_MetaData[] = {
 		{ "Category", "Character" },
@@ -536,6 +485,7 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_SpringArmTargetLength = { "SpringArmTargetLength", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseCharacter, SpringArmTargetLength), METADATA_PARAMS(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_SpringArmTargetLength_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_SpringArmTargetLength_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASMBaseCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_Contoller,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetSystem,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_SpringArmComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_CameraComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_HealthComponent,
@@ -589,9 +539,9 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASMBaseCharacter, ASMBaseCharacter::StaticClass, TEXT("ASMBaseCharacter"), &Z_Registration_Info_UClass_ASMBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMBaseCharacter), 3134204277U) },
+		{ Z_Construct_UClass_ASMBaseCharacter, ASMBaseCharacter::StaticClass, TEXT("ASMBaseCharacter"), &Z_Registration_Info_UClass_ASMBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMBaseCharacter), 1914464598U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_2875645970(TEXT("/Script/SimpleM"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_3664907731(TEXT("/Script/SimpleM"),
 		Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

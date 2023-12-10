@@ -7,8 +7,19 @@
         "Includes": [
             "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\simplem\\definitions.simplem.h",
             "d:\\ueproj\\nextgen\\nextgen\\source\\simplem\\public\\player\\smbaseplayercontroller.h",
+            "d:\\ueproj\\nextgen\\nextgen\\source\\simplem\\public\\player\\smbasecharacter.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "c:\\program files\\epic games\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\smbasecharacter.generated.h",
             "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\smbaseplayercontroller.generated.h",
-            "c:\\program files\\epic games\\ue_5.2\\engine\\source\\runtime\\engine\\public\\slate\\sceneviewport.h"
+            "d:\\ueproj\\nextgen\\nextgen\\source\\simplem\\public\\smtargetsystem.h",
+            "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\smtargetsystem.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

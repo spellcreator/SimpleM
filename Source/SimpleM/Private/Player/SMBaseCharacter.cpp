@@ -9,6 +9,7 @@
 #include "SMBasePlayerController.h"
 #include "MyInputConfigData.h"
 #include "SMHealthComponent.h"
+#include "SMTargetSystem.h"
 #include "Components/CapsuleComponent.h"
 #include "EnhancedInput/Public/EnhancedInputComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -63,6 +64,9 @@ ASMBaseCharacter::ASMBaseCharacter(const FObjectInitializer &Object)
 	GetCharacterMovement()->bUseControllerDesiredRotation = true;
 	GetCharacterMovement()->bIgnoreBaseRotation = true;
 
+	//
+	TargetSystem = CreateDefaultSubobject<USMTargetSystem>("TargetSys");
+
 // Камера компонент	
 	//Сетапим камеру и прикручиваем к нашей стойке
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>("Camera");
@@ -89,6 +93,7 @@ ASMBaseCharacter::ASMBaseCharacter(const FObjectInitializer &Object)
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->AirControl = 0.2f;
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 550.f, 0.f);
+	
 
 	// Добавляем чтоб перс смотрел в сторону направления 
 	bUseControllerRotationPitch = false;
@@ -109,26 +114,6 @@ void ASMBaseCharacter::BeginPlay()
 	// Делаем на старте скорость равную хотьбе
 	PlayerSpeed = WalkSpeed;
 	CharacterMovementComponent->MaxWalkSpeed = PlayerSpeed;
-}
-
-
-
-void ASMBaseCharacter::OnClickStart()
-{
-
-	FHitResult HitResult;
-	//WeaponComponent->Fire();
-	Contoller->ShowCursor();
-	//Contoller->bShowMouseCursor = true;
-	
-}
-
-void ASMBaseCharacter::OnClickEnd()
-{
-	Contoller->HideCursor();
-	
-	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("АГСЛ НЩГ")));
-	//Contoller->bShowMouseCursor = false;
 }
 
 
@@ -172,10 +157,10 @@ void ASMBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Pei->BindAction(InputActions->InputSprint,ETriggerEvent::Completed,this, &ASMBaseCharacter::EndSprint);
 	Pei->BindAction(InputActions->InputOpenDoor,ETriggerEvent::Triggered,this, &ASMBaseCharacter::OpenDoorAction);
 	//Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,WeaponComponent, &USMWeaponComponent::Fire);
-	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,this, &ASMBaseCharacter::OnClickStart);
-	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Completed,this, &ASMBaseCharacter::OnClickEnd);
-	
 	Pei->BindAction(InputActions->InputLookArmLength,ETriggerEvent::Triggered,this, &ASMBaseCharacter::SpringArmLength);
+	
+	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,Contoller, &ASMBasePlayerController::OnClickStart);
+	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Completed,Contoller, &ASMBasePlayerController::OnClickEnd);
 }
 
 void ASMBaseCharacter::BeginSprint()

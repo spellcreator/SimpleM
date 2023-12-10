@@ -14,11 +14,21 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SIMPLEM_SMBasePlayerController_generated_h
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_SPARSE_DATA
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_RPC_WRAPPERS
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_ACCESSORS
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_SPARSE_DATA
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnClickEnd); \
+	DECLARE_FUNCTION(execOnClickStart);
+
+
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnClickEnd); \
+	DECLARE_FUNCTION(execOnClickStart);
+
+
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_ACCESSORS
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASMBasePlayerController(); \
 	friend struct Z_Construct_UClass_ASMBasePlayerController_Statics; \
@@ -27,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(ASMBasePlayerController)
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_INCLASS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesASMBasePlayerController(); \
 	friend struct Z_Construct_UClass_ASMBasePlayerController_Statics; \
@@ -36,7 +46,7 @@ public: \
 	DECLARE_SERIALIZER(ASMBasePlayerController)
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_STANDARD_CONSTRUCTORS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASMBasePlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASMBasePlayerController) \
@@ -50,7 +60,7 @@ public: \
 	NO_API virtual ~ASMBasePlayerController();
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASMBasePlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -64,27 +74,27 @@ public: \
 	NO_API virtual ~ASMBasePlayerController();
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_12_PROLOG
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_GENERATED_BODY_LEGACY \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_PROLOG
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_SPARSE_DATA \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_RPC_WRAPPERS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_ACCESSORS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_INCLASS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_STANDARD_CONSTRUCTORS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_SPARSE_DATA \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_RPC_WRAPPERS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_ACCESSORS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_INCLASS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_GENERATED_BODY \
+#define FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_SPARSE_DATA \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_ACCESSORS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_INCLASS_NO_PURE_DECLS \
-	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_15_ENHANCED_CONSTRUCTORS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_SPARSE_DATA \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_ACCESSORS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_INCLASS_NO_PURE_DECLS \
+	FID_NextGen_Source_SimpleM_Public_Player_SMBasePlayerController_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
