@@ -6,8 +6,9 @@
 #include "Weapon/SMBaseWeapon.h"
 #include "SMThrowWeapon.generated.h"
 
+class ASMBaseCharacter;
 class ASMProjectile;
-
+class USMTargetSystem;
 /**
  * 
  */
@@ -19,14 +20,13 @@ class SIMPLEM_API ASMThrowWeapon : public ASMBaseWeapon
 public:
 	virtual void StartFire() override;
 
-	
+	UPROPERTY()
+	ASMBaseCharacter* BaseCharacter;
 
 protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Weapon")
 	TSubclassOf<ASMProjectile> ProjectileClass;
-
-	
 	
 	virtual void MakeShot() override;
 	

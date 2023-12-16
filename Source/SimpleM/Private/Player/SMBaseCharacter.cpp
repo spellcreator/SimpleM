@@ -56,9 +56,8 @@ ASMBaseCharacter::ASMBaseCharacter(const FObjectInitializer &Object)
 	SpringArmComponent->bUsePawnControlRotation = true;
 	SpringArmComponent->TargetArmLength = SpringArmTargetLength;
 	//SpringArmComponent->SocketOffset = FVector(.0f,100.0f,.0f);
-
 	WeaponComponent = CreateDefaultSubobject<USMWeaponComponent>("WeaponComponent");
-
+	
 	//
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->bUseControllerDesiredRotation = true;
@@ -72,6 +71,7 @@ ASMBaseCharacter::ASMBaseCharacter(const FObjectInitializer &Object)
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>("Camera");
 	CameraComponent->SetupAttachment(SpringArmComponent);
 	CameraComponent->bUsePawnControlRotation = false;
+	
 	
 // Компонент капсулы	
 	TriggerCapsule = CreateDefaultSubobject<UCapsuleComponent>("Capsule trigger");
@@ -114,6 +114,7 @@ void ASMBaseCharacter::BeginPlay()
 	// Делаем на старте скорость равную хотьбе
 	PlayerSpeed = WalkSpeed;
 	CharacterMovementComponent->MaxWalkSpeed = PlayerSpeed;
+	
 }
 
 
@@ -122,7 +123,6 @@ void ASMBaseCharacter::BeginPlay()
 void ASMBaseCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	//YourFunctionToShowOrHideCursor(true);
 }
 
 
@@ -138,7 +138,6 @@ void ASMBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	//получаем контроллер  
 	//APlayerController* PC = Cast<APlayerController>(GetController());
 	Contoller = Cast<ASMBasePlayerController>(Cast<APlayerController>(GetController()));
-	
 	
 	//создаем сабсистему 
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(Contoller->GetLocalPlayer());
@@ -156,7 +155,7 @@ void ASMBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Pei->BindAction(InputActions->InputSprint,ETriggerEvent::Triggered,this, &ASMBaseCharacter::BeginSprint);
 	Pei->BindAction(InputActions->InputSprint,ETriggerEvent::Completed,this, &ASMBaseCharacter::EndSprint);
 	Pei->BindAction(InputActions->InputOpenDoor,ETriggerEvent::Triggered,this, &ASMBaseCharacter::OpenDoorAction);
-	//Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,WeaponComponent, &USMWeaponComponent::Fire);
+	Pei->BindAction(InputActions->InputOpenDoor,ETriggerEvent::Started,WeaponComponent, &USMWeaponComponent::Fire);
 	Pei->BindAction(InputActions->InputLookArmLength,ETriggerEvent::Triggered,this, &ASMBaseCharacter::SpringArmLength);
 	
 	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,Contoller, &ASMBasePlayerController::OnClickStart);
@@ -192,6 +191,7 @@ void ASMBaseCharacter::OpenDoorAction()
 	{
 		CurrentDoor->ToggleDoor();
 	}
+	//WeaponComponent->Fire();
 }
 
 void ASMBaseCharacter::Jump()

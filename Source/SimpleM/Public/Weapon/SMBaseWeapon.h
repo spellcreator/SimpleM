@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "SMBaseWeapon.generated.h"
 
+class ASMBaseCharacter;
 class USkeletalMeshComponent;
 UCLASS()
 class SIMPLEM_API ASMBaseWeapon : public AActor
@@ -21,14 +22,12 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
 	USkeletalMeshComponent* WeaponMesh;
 	UPROPERTY(EditDefaultsOnly, Category="Weapon")
 	FName WeaponAttachPointName = "Weapon_R";
 
 public:
-	virtual void MakeShot();
-
+	virtual void MakeShot(){}
 	FVector GetMuzzleSocketLocation() const;
 };

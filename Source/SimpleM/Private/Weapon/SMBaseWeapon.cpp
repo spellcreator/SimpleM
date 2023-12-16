@@ -2,6 +2,9 @@
 
 
 #include "Weapon/SMBaseWeapon.h"
+
+#include "SMBaseCharacter.h"
+#include "SMTargetSystem.h"
 #include "Components/SkeletalMeshComponent.h"
 
 DEFINE_LOG_CATEGORY_STATIC(WeaponLog, All, All);
@@ -12,13 +15,14 @@ ASMBaseWeapon::ASMBaseWeapon()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 	WeaponMesh = CreateDefaultSubobject<USkeletalMeshComponent>("WeaponComp");
+	if (!WeaponMesh) return;
 	SetRootComponent(WeaponMesh);
 }
 
 void ASMBaseWeapon::StartFire()
 {
-	UE_LOG(WeaponLog,Display, TEXT("Fire"));
 	MakeShot();
+	
 }
 
 // Called when the game starts or when spawned
@@ -26,11 +30,6 @@ void ASMBaseWeapon::BeginPlay()
 {
 	Super::BeginPlay();
 	
-}
-
-
-void ASMBaseWeapon::MakeShot()
-{
 }
 
 FVector ASMBaseWeapon::GetMuzzleSocketLocation() const

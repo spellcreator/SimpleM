@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\smthrowweapon.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\x64\\simplemeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\simplem\\definitions.simplem.h",
+            "d:\\ueproj\\nextgen\\nextgen\\source\\simplem\\public\\weapon\\smthrowweapon.h",
+            "d:\\ueproj\\nextgen\\nextgen\\source\\simplem\\public\\weapon\\smbaseweapon.h",
+            "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\smbaseweapon.generated.h",
+            "d:\\ueproj\\nextgen\\nextgen\\intermediate\\build\\win64\\unrealeditor\\inc\\simplem\\uht\\smthrowweapon.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

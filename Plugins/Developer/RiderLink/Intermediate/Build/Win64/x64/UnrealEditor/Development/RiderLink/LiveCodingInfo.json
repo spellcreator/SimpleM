@@ -2,9 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.RiderLink.cpp.obj": [
-			"ProtocolFactory.cpp.obj",
-			"RiderLink.cpp.obj",
-			"UE4TypesMarshallers.cpp.obj",
 			"instantiations_UE4Library.cpp.obj",
 			"BlueprintFunction.Pregenerated.cpp.obj",
 			"BlueprintHighlighter.Pregenerated.cpp.obj",
@@ -34,7 +31,10 @@
 			"instantiations_RdEditorRoot.cpp.obj",
 			"LiveCodingModel.Pregenerated.cpp.obj",
 			"RdEditorModel.Pregenerated.cpp.obj",
-			"RdEditorRoot.Pregenerated.cpp.obj"
+			"RdEditorRoot.Pregenerated.cpp.obj",
+			"ProtocolFactory.cpp.obj",
+			"RiderLink.cpp.obj",
+			"UE4TypesMarshallers.cpp.obj"
 		]
 	}
 }

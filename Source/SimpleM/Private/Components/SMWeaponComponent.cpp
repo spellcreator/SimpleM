@@ -44,7 +44,5 @@ void USMWeaponComponent::Fire()
 	if(!CurrentWeapon)return;
 
 	CurrentWeapon->StartFire();
-	const ACharacter* Character = Cast<ACharacter>(GetOwner());
-	
 }
 
