@@ -18,7 +18,9 @@ class ASMSwingDoor;
 class USMWeaponComponent;
 class ASMBasePlayerController;
 class USMTargetSystem;
-
+class UStaticMeshComponent;
+class UStaticMesh;
+class UMaterial;
 UCLASS()
 class SIMPLEM_API ASMBaseCharacter : public ACharacter
 {
@@ -27,7 +29,16 @@ class SIMPLEM_API ASMBaseCharacter : public ACharacter
 public:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Character")
-	ASMBasePlayerController* Contoller;
+	ASMBasePlayerController* MyController;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Character")
+	UStaticMeshComponent* GridMeshComponent;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Character")
+	UStaticMesh* TargetMesh;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Character")
+	UMaterial* TargetMaterial;
 	
 	
 	UFUNCTION(BlueprintCallable, Category= "PlayerMovement")
@@ -62,11 +73,12 @@ public:
 	UCapsuleComponent* TriggerCapsule;
 	// Sets default values for this character's properties
 	ASMBaseCharacter(const FObjectInitializer &Object);
-
+	void SetTargetMat();
+	void SetTargetMatN();
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+	
 
 	
 
@@ -87,14 +99,11 @@ protected:
 
 	void BeginSprint();
 	void EndSprint();
-
+	
 	void OpenDoorAction();
 
 	virtual void Jump() override;
 
-
-
-	
 private:
 
 	float StartArmLenght; 

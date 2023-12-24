@@ -15,8 +15,11 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCharacterMovementComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UMaterial_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMBaseCharacter();
@@ -262,9 +265,21 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Contoller_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MyController_MetaData[];
 #endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_Contoller;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_MyController;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_GridMeshComponent_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_GridMeshComponent;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_TargetMesh_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetMesh;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_TargetMaterial_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetMaterial;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_TargetSystem_MetaData[];
 #endif
@@ -352,12 +367,34 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 	};
 #endif
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_Contoller_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_MyController_MetaData[] = {
 		{ "Category", "Character" },
 		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_Contoller = { "Contoller", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseCharacter, Contoller), Z_Construct_UClass_ASMBasePlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_Contoller_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_Contoller_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_MyController = { "MyController", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseCharacter, MyController), Z_Construct_UClass_ASMBasePlayerController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_MyController_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_MyController_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_GridMeshComponent_MetaData[] = {
+		{ "Category", "Character" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_GridMeshComponent = { "GridMeshComponent", nullptr, (EPropertyFlags)0x001000000009000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseCharacter, GridMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_GridMeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_GridMeshComponent_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMesh_MetaData[] = {
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMesh = { "TargetMesh", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseCharacter, TargetMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMesh_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMaterial_MetaData[] = {
+		{ "Category", "Character" },
+		{ "ModuleRelativePath", "Public/Player/SMBaseCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMaterial = { "TargetMaterial", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseCharacter, TargetMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMaterial_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMaterial_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetSystem_MetaData[] = {
 		{ "Category", "Target" },
@@ -484,7 +521,10 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_SpringArmTargetLength = { "SpringArmTargetLength", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseCharacter, SpringArmTargetLength), METADATA_PARAMS(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_SpringArmTargetLength_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_SpringArmTargetLength_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASMBaseCharacter_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_Contoller,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_MyController,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_GridMeshComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMesh,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetMaterial,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_TargetSystem,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_SpringArmComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseCharacter_Statics::NewProp_CameraComponent,
@@ -539,9 +579,9 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASMBaseCharacter, ASMBaseCharacter::StaticClass, TEXT("ASMBaseCharacter"), &Z_Registration_Info_UClass_ASMBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMBaseCharacter), 1914464598U) },
+		{ Z_Construct_UClass_ASMBaseCharacter, ASMBaseCharacter::StaticClass, TEXT("ASMBaseCharacter"), &Z_Registration_Info_UClass_ASMBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMBaseCharacter), 1046939096U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_3664907731(TEXT("/Script/SimpleM"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_854275468(TEXT("/Script/SimpleM"),
 		Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Player_SMBaseCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

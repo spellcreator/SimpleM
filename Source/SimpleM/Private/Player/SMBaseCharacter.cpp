@@ -47,7 +47,8 @@ ASMBaseCharacter::ASMBaseCharacter(const FObjectInitializer &Object)
 	PrimaryActorTick.bCanEverTick = true;
 
 
-	Contoller = CreateDefaultSubobject<ASMBasePlayerController>("PlayerContorller");
+	MyController = CreateDefaultSubobject<ASMBasePlayerController>("PlayerController");
+	
 // Компонент стойки
 	
 	// Сетапим стойку для камеры, закрепляем ее за рут компонентом и настраиваем под хотелки
@@ -72,7 +73,8 @@ ASMBaseCharacter::ASMBaseCharacter(const FObjectInitializer &Object)
 	CameraComponent->SetupAttachment(SpringArmComponent);
 	CameraComponent->bUsePawnControlRotation = false;
 	
-	
+	GridMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GridMeshComponent"));
+	GridMeshComponent->SetupAttachment(GetRootComponent());
 // Компонент капсулы	
 	TriggerCapsule = CreateDefaultSubobject<UCapsuleComponent>("Capsule trigger");
 	TriggerCapsule->InitCapsuleSize(55.f,96.f);
@@ -117,6 +119,17 @@ void ASMBaseCharacter::BeginPlay()
 	
 }
 
+void ASMBaseCharacter::SetTargetMat()
+{
+	GridMeshComponent->SetStaticMesh(TargetMesh);
+	GridMeshComponent->SetMaterial(0, TargetMaterial);
+	GridMeshComponent->SetRelativeLocation(FVector(0.f,0.f,-80.f));
+}
+void ASMBaseCharacter::SetTargetMatN()
+{
+	GridMeshComponent->SetStaticMesh(nullptr);
+	GridMeshComponent->SetMaterial(0, nullptr);
+}
 
 
 // Called every frame
@@ -129,6 +142,7 @@ void ASMBaseCharacter::Tick(float DeltaTime)
 
 bool ASMBaseCharacter::IsRunning() const
 {
+	
 	return WantsToRun && !GetVelocity().IsZero();
 }
 
@@ -137,10 +151,10 @@ void ASMBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 {
 	//получаем контроллер  
 	//APlayerController* PC = Cast<APlayerController>(GetController());
-	Contoller = Cast<ASMBasePlayerController>(Cast<APlayerController>(GetController()));
+	MyController = Cast<ASMBasePlayerController>(Cast<APlayerController>(GetController()));
 	
 	//создаем сабсистему 
-	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(Contoller->GetLocalPlayer());
+	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(MyController->GetLocalPlayer());
 	Subsystem->ClearAllMappings();
 	Subsystem->AddMappingContext(InputMapping, 0);
 	
@@ -149,6 +163,7 @@ void ASMBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	// Bind the actions
 	// TODO: Перенести логику всех екшенов в компоненты (мувмент компонент и тд). а отсюда вызывать его как фаер.
 	// Вместо зис указывать нужный нам компонент
+	check(Pei);
 	Pei->BindAction(InputActions->InputMove, ETriggerEvent::Triggered, this, &ASMBaseCharacter::Move);
 	Pei->BindAction(InputActions->InputLook, ETriggerEvent::Triggered, this, &ASMBaseCharacter::Look);
 	Pei->BindAction(InputActions->InputJump, ETriggerEvent::Started, this, &ASMBaseCharacter::Jump);
@@ -158,8 +173,8 @@ void ASMBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Pei->BindAction(InputActions->InputOpenDoor,ETriggerEvent::Started,WeaponComponent, &USMWeaponComponent::Fire);
 	Pei->BindAction(InputActions->InputLookArmLength,ETriggerEvent::Triggered,this, &ASMBaseCharacter::SpringArmLength);
 	
-	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,Contoller, &ASMBasePlayerController::OnClickStart);
-	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Completed,Contoller, &ASMBasePlayerController::OnClickEnd);
+	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Started,MyController, &ASMBasePlayerController::OnClickStart);
+	Pei->BindAction(InputActions->InputFire,ETriggerEvent::Completed,MyController, &ASMBasePlayerController::OnClickEnd);
 }
 
 void ASMBaseCharacter::BeginSprint()
@@ -237,7 +252,7 @@ void ASMBaseCharacter::Look(const FInputActionValue& Value)
 	
 	if(!Controller) return;
 	//cделать гетер или убрать совсем эту хуйню
-	if (Contoller->showcurs)
+	if (MyController->showcurs)
 	{
 		const FVector2D LookValue = Value.Get<FVector2D>();
 		if (LookValue.X != 0.f)

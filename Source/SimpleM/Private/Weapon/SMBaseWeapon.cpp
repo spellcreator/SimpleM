@@ -22,7 +22,6 @@ ASMBaseWeapon::ASMBaseWeapon()
 void ASMBaseWeapon::StartFire()
 {
 	MakeShot();
-	
 }
 
 // Called when the game starts or when spawned

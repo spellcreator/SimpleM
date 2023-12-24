@@ -1560,6 +1560,9 @@
     <ClCompile Include="..\..\Source\SimpleM\Private\Weapon\SMProjectile.cpp">
       <Filter>Source\SimpleM\Private\Weapon</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\SimpleM\Private\Weapon\SMSpawnSword.cpp">
+      <Filter>Source\SimpleM\Private\Weapon</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\SimpleM\Private\Weapon\SMThrowWeapon.cpp">
       <Filter>Source\SimpleM\Private\Weapon</Filter>
     </ClCompile>
@@ -1639,6 +1642,9 @@
       <Filter>Source\SimpleM\Public\Weapon</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SimpleM\Public\Weapon\SMProjectile.h">
+      <Filter>Source\SimpleM\Public\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SimpleM\Public\Weapon\SMSpawnSword.h">
       <Filter>Source\SimpleM\Public\Weapon</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\SimpleM\Public\Weapon\SMThrowWeapon.h">

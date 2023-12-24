@@ -14,11 +14,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SIMPLEM_SMProjectile_generated_h
 
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_SPARSE_DATA
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_RPC_WRAPPERS
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_ACCESSORS
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_SPARSE_DATA
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_RPC_WRAPPERS
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_ACCESSORS
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASMProjectile(); \
 	friend struct Z_Construct_UClass_ASMProjectile_Statics; \
@@ -27,7 +27,7 @@ public: \
 	DECLARE_SERIALIZER(ASMProjectile)
 
 
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_INCLASS \
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesASMProjectile(); \
 	friend struct Z_Construct_UClass_ASMProjectile_Statics; \
@@ -36,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(ASMProjectile)
 
 
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_STANDARD_CONSTRUCTORS \
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASMProjectile(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASMProjectile) \
@@ -50,7 +50,7 @@ public: \
 	NO_API virtual ~ASMProjectile();
 
 
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASMProjectile(ASMProjectile&&); \
@@ -62,27 +62,27 @@ public: \
 	NO_API virtual ~ASMProjectile();
 
 
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_11_PROLOG
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_GENERATED_BODY_LEGACY \
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_13_PROLOG
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_SPARSE_DATA \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_RPC_WRAPPERS \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_ACCESSORS \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_INCLASS \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_STANDARD_CONSTRUCTORS \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_SPARSE_DATA \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_RPC_WRAPPERS \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_ACCESSORS \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_INCLASS \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_GENERATED_BODY \
+#define FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_SPARSE_DATA \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_ACCESSORS \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_INCLASS_NO_PURE_DECLS \
-	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_14_ENHANCED_CONSTRUCTORS \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_SPARSE_DATA \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_ACCESSORS \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_INCLASS_NO_PURE_DECLS \
+	FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

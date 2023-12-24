@@ -10,8 +10,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSMProjectile() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMProjectile();
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMProjectile_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_SimpleM();
@@ -31,9 +33,17 @@ void EmptyLinkFunctionForGeneratedCodeSMProjectile() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CollisionComponent_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_WeaponMesh_MetaData[];
 #endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_CollisionComponent;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_WeaponMesh;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SceneComponent_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_SceneComponent;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Material_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Material;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MovementComponent_MetaData[];
 #endif
@@ -53,13 +63,28 @@ void EmptyLinkFunctionForGeneratedCodeSMProjectile() {}
 	};
 #endif
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMProjectile_Statics::NewProp_CollisionComponent_MetaData[] = {
-		{ "Category", "Weapon" },
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMProjectile_Statics::NewProp_WeaponMesh_MetaData[] = {
+		{ "Category", "Components" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Weapon/SMProjectile.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMProjectile_Statics::NewProp_CollisionComponent = { "CollisionComponent", nullptr, (EPropertyFlags)0x00200800000b0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMProjectile, CollisionComponent), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMProjectile_Statics::NewProp_CollisionComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMProjectile_Statics::NewProp_CollisionComponent_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMProjectile_Statics::NewProp_WeaponMesh = { "WeaponMesh", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMProjectile, WeaponMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMProjectile_Statics::NewProp_WeaponMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMProjectile_Statics::NewProp_WeaponMesh_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMProjectile_Statics::NewProp_SceneComponent_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Weapon/SMProjectile.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMProjectile_Statics::NewProp_SceneComponent = { "SceneComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMProjectile, SceneComponent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMProjectile_Statics::NewProp_SceneComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMProjectile_Statics::NewProp_SceneComponent_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMProjectile_Statics::NewProp_Material_MetaData[] = {
+		{ "Category", "Components" },
+		{ "ModuleRelativePath", "Public/Weapon/SMProjectile.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMProjectile_Statics::NewProp_Material = { "Material", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMProjectile, Material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMProjectile_Statics::NewProp_Material_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMProjectile_Statics::NewProp_Material_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMProjectile_Statics::NewProp_MovementComponent_MetaData[] = {
 		{ "Category", "Weapon" },
@@ -69,7 +94,9 @@ void EmptyLinkFunctionForGeneratedCodeSMProjectile() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMProjectile_Statics::NewProp_MovementComponent = { "MovementComponent", nullptr, (EPropertyFlags)0x00200800000b0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMProjectile, MovementComponent), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMProjectile_Statics::NewProp_MovementComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMProjectile_Statics::NewProp_MovementComponent_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASMProjectile_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_CollisionComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_WeaponMesh,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_SceneComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_Material,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_MovementComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASMProjectile_Statics::StaticCppClassTypeInfo = {
@@ -109,9 +136,9 @@ void EmptyLinkFunctionForGeneratedCodeSMProjectile() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASMProjectile, ASMProjectile::StaticClass, TEXT("ASMProjectile"), &Z_Registration_Info_UClass_ASMProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMProjectile), 2699307334U) },
+		{ Z_Construct_UClass_ASMProjectile, ASMProjectile::StaticClass, TEXT("ASMProjectile"), &Z_Registration_Info_UClass_ASMProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMProjectile), 2828738489U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_3057971443(TEXT("/Script/SimpleM"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_1473790969(TEXT("/Script/SimpleM"),
 		Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

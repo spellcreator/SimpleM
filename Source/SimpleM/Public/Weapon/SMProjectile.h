@@ -6,8 +6,10 @@
 #include "GameFramework/Actor.h"
 #include "SMProjectile.generated.h"
 
-class USphereComponent;
+class UMaterialInterface;
 class UProjectileMovementComponent;
+class UStaticMeshComponent;
+class USceneComponent;
 UCLASS()
 class SIMPLEM_API ASMProjectile : public AActor
 {
@@ -17,19 +19,28 @@ public:
 	// Sets default values for this actor's properties
 	ASMProjectile();
 	void SetShootDirection(FVector Direction);
+	UPROPERTY(VisibleAnywhere, Category="Components")
+	UStaticMeshComponent* WeaponMesh;
+
+	UPROPERTY(VisibleAnywhere, Category="Components")
+	USceneComponent* SceneComponent;
+	UPROPERTY(VisibleAnywhere, Category="Components")
+	UMaterialInterface* Material;
+
+	
+	
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
-
-	UPROPERTY(VisibleDefaultsOnly, Category="Weapon")
-	USphereComponent* CollisionComponent;
+	
+	
+	
 
 	UPROPERTY(VisibleDefaultsOnly, Category="Weapon")
 	UProjectileMovementComponent* MovementComponent;
 
-public:	
-
+public:
 	FVector ShootDirection;
 };
