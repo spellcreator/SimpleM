@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSMProjectile() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
@@ -48,6 +49,10 @@ void EmptyLinkFunctionForGeneratedCodeSMProjectile() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MovementComponent_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_MovementComponent;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Dynamic_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Dynamic;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -93,11 +98,18 @@ void EmptyLinkFunctionForGeneratedCodeSMProjectile() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMProjectile_Statics::NewProp_MovementComponent = { "MovementComponent", nullptr, (EPropertyFlags)0x00200800000b0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMProjectile, MovementComponent), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMProjectile_Statics::NewProp_MovementComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMProjectile_Statics::NewProp_MovementComponent_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMProjectile_Statics::NewProp_Dynamic_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Weapon/SMProjectile.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMProjectile_Statics::NewProp_Dynamic = { "Dynamic", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMProjectile, Dynamic), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMProjectile_Statics::NewProp_Dynamic_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMProjectile_Statics::NewProp_Dynamic_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASMProjectile_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_WeaponMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_SceneComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_Material,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_MovementComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMProjectile_Statics::NewProp_Dynamic,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASMProjectile_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASMProjectile>::IsAbstract,
@@ -136,9 +148,9 @@ void EmptyLinkFunctionForGeneratedCodeSMProjectile() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASMProjectile, ASMProjectile::StaticClass, TEXT("ASMProjectile"), &Z_Registration_Info_UClass_ASMProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMProjectile), 2828738489U) },
+		{ Z_Construct_UClass_ASMProjectile, ASMProjectile::StaticClass, TEXT("ASMProjectile"), &Z_Registration_Info_UClass_ASMProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMProjectile), 924097893U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_1473790969(TEXT("/Script/SimpleM"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_3411801588(TEXT("/Script/SimpleM"),
 		Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMProjectile_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

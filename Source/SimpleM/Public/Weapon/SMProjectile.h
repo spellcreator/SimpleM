@@ -27,7 +27,9 @@ public:
 	UPROPERTY(VisibleAnywhere, Category="Components")
 	UMaterialInterface* Material;
 
-	
+	void InitMaterialParam();
+
+	void ChangeMaterialParam();
 	
 
 protected:
@@ -35,7 +37,7 @@ protected:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 	
-	
+	FTimerHandle TimerHandle;
 	
 
 	UPROPERTY(VisibleDefaultsOnly, Category="Weapon")
@@ -43,4 +45,13 @@ protected:
 
 public:
 	FVector ShootDirection;
+
+	float UpdateModifier = 0.5f;
+	float UpdateDelay = 0.3f;
+	float UpdateTime = 1.f;
+	float Fade = 1.f;
+	float MAXFade = -1.f;
+
+	UPROPERTY()
+	UMaterialInstanceDynamic* Dynamic;
 };

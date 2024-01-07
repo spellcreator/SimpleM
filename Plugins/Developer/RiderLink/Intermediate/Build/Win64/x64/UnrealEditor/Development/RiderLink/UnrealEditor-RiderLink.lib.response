@@ -7,8 +7,5 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderLink\Module.RiderLink.cpp.obj"
-"D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderLink\ProtocolFactory.cpp.obj"
-"D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderLink\RiderLink.cpp.obj"
-"D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderLink\UE4TypesMarshallers.cpp.obj"
 "D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderLink\Default.rc2.res"
 /OUT:"D:\UEProj\NextGen\NextGen\Plugins\Developer\RiderLink\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiderLink\UnrealEditor-RiderLink.lib"

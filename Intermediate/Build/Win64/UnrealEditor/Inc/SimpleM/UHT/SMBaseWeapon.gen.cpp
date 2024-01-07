@@ -9,10 +9,12 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSMBaseWeapon() {}
 // Cross Module References
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMBaseWeapon();
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMBaseWeapon_NoRegister();
+	SIMPLEM_API UClass* Z_Construct_UClass_ASMProjectile_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_SimpleM();
 // End Cross Module References
 	void ASMBaseWeapon::StaticRegisterNativesASMBaseWeapon()
@@ -37,6 +39,14 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseWeapon() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_WeaponAttachPointName_MetaData[];
 #endif
 		static const UECodeGen_Private::FNamePropertyParams NewProp_WeaponAttachPointName;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ActorToSpawn_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_ActorToSpawn;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CurrentProjectile_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CurrentProjectile;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -66,9 +76,25 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseWeapon() {}
 	};
 #endif
 	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_WeaponAttachPointName = { "WeaponAttachPointName", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseWeapon, WeaponAttachPointName), METADATA_PARAMS(Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_WeaponAttachPointName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_WeaponAttachPointName_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_ActorToSpawn_MetaData[] = {
+		{ "Category", "Spawning" },
+		{ "ModuleRelativePath", "Public/Weapon/SMBaseWeapon.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_ActorToSpawn = { "ActorToSpawn", nullptr, (EPropertyFlags)0x0014000000010005, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseWeapon, ActorToSpawn), Z_Construct_UClass_UClass, Z_Construct_UClass_ASMProjectile_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_ActorToSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_ActorToSpawn_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_CurrentProjectile_MetaData[] = {
+		{ "Category", "SMBaseWeapon" },
+		{ "ModuleRelativePath", "Public/Weapon/SMBaseWeapon.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_CurrentProjectile = { "CurrentProjectile", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMBaseWeapon, CurrentProjectile), Z_Construct_UClass_ASMProjectile_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_CurrentProjectile_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_CurrentProjectile_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASMBaseWeapon_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_WeaponMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_WeaponAttachPointName,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_ActorToSpawn,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMBaseWeapon_Statics::NewProp_CurrentProjectile,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASMBaseWeapon_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASMBaseWeapon>::IsAbstract,
@@ -107,9 +133,9 @@ void EmptyLinkFunctionForGeneratedCodeSMBaseWeapon() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMBaseWeapon_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASMBaseWeapon, ASMBaseWeapon::StaticClass, TEXT("ASMBaseWeapon"), &Z_Registration_Info_UClass_ASMBaseWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMBaseWeapon), 1935696587U) },
+		{ Z_Construct_UClass_ASMBaseWeapon, ASMBaseWeapon::StaticClass, TEXT("ASMBaseWeapon"), &Z_Registration_Info_UClass_ASMBaseWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMBaseWeapon), 1880743534U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMBaseWeapon_h_4037616301(TEXT("/Script/SimpleM"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMBaseWeapon_h_3102540101(TEXT("/Script/SimpleM"),
 		Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMBaseWeapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMBaseWeapon_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

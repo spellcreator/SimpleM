@@ -9,12 +9,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSMSpawnSword() {}
 // Cross Module References
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMBaseCharacter_NoRegister();
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMBaseWeapon();
-	SIMPLEM_API UClass* Z_Construct_UClass_ASMProjectile_NoRegister();
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMSpawnSword();
 	SIMPLEM_API UClass* Z_Construct_UClass_ASMSpawnSword_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_SimpleM();
@@ -76,10 +73,6 @@ void EmptyLinkFunctionForGeneratedCodeSMSpawnSword() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_BaseCharacter;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_ActorToSpawn_MetaData[];
-#endif
-		static const UECodeGen_Private::FClassPropertyParams NewProp_ActorToSpawn;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpawnRadius_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_SpawnRadius;
@@ -91,10 +84,6 @@ void EmptyLinkFunctionForGeneratedCodeSMSpawnSword() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SphereColor_MetaData[];
 #endif
 		static const UECodeGen_Private::FStructPropertyParams NewProp_SphereColor;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[];
-#endif
-		static const UECodeGen_Private::FClassPropertyParams NewProp_ProjectileClass;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -120,13 +109,6 @@ void EmptyLinkFunctionForGeneratedCodeSMSpawnSword() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_BaseCharacter = { "BaseCharacter", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMSpawnSword, BaseCharacter), Z_Construct_UClass_ASMBaseCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_BaseCharacter_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_BaseCharacter_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ActorToSpawn_MetaData[] = {
-		{ "Category", "Spawning" },
-		{ "ModuleRelativePath", "Public/Weapon/SMSpawnSword.h" },
-	};
-#endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ActorToSpawn = { "ActorToSpawn", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMSpawnSword, ActorToSpawn), Z_Construct_UClass_UClass, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ActorToSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ActorToSpawn_MetaData)) };
-#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_SpawnRadius_MetaData[] = {
 		{ "Category", "Spawning" },
 		{ "Comment", "// The radius within which actors will be spawned\n" },
@@ -151,20 +133,11 @@ void EmptyLinkFunctionForGeneratedCodeSMSpawnSword() {}
 	};
 #endif
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_SphereColor = { "SphereColor", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMSpawnSword, SphereColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_SphereColor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_SphereColor_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ProjectileClass_MetaData[] = {
-		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Public/Weapon/SMSpawnSword.h" },
-	};
-#endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000000010005, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ASMSpawnSword, ProjectileClass), Z_Construct_UClass_UClass, Z_Construct_UClass_ASMProjectile_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ProjectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ProjectileClass_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASMSpawnSword_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_BaseCharacter,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ActorToSpawn,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_SpawnRadius,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_NumberOfActorsToSpawn,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_SphereColor,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASMSpawnSword_Statics::NewProp_ProjectileClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ASMSpawnSword_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASMSpawnSword>::IsAbstract,
@@ -204,9 +177,9 @@ void EmptyLinkFunctionForGeneratedCodeSMSpawnSword() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMSpawnSword_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASMSpawnSword, ASMSpawnSword::StaticClass, TEXT("ASMSpawnSword"), &Z_Registration_Info_UClass_ASMSpawnSword, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMSpawnSword), 3279643188U) },
+		{ Z_Construct_UClass_ASMSpawnSword, ASMSpawnSword::StaticClass, TEXT("ASMSpawnSword"), &Z_Registration_Info_UClass_ASMSpawnSword, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASMSpawnSword), 3880935309U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMSpawnSword_h_2005666903(TEXT("/Script/SimpleM"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMSpawnSword_h_1406168739(TEXT("/Script/SimpleM"),
 		Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMSpawnSword_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_NextGen_Source_SimpleM_Public_Weapon_SMSpawnSword_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

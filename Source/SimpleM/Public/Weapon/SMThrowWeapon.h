@@ -24,9 +24,6 @@ public:
 	ASMBaseCharacter* BaseCharacter;
 
 protected:
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Weapon")
-	TSubclassOf<ASMProjectile> ProjectileClass;
 	
 	virtual void MakeShot() override;
 	

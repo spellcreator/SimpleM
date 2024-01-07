@@ -27,6 +27,29 @@ void ASMProjectile::SetShootDirection(FVector Direction)
 {
 	ShootDirection = Direction;
 }
+
+void ASMProjectile::InitMaterialParam()
+{
+	Fade = FMath::Min(Fade - UpdateModifier, MAXFade);
+	if (Fade == MAXFade && GetWorld())
+	{
+		GetWorld()->GetTimerManager().ClearTimer(TimerHandle);
+	}
+}
+
+void ASMProjectile::ChangeMaterialParam()
+{
+	Material = WeaponMesh->GetMaterial(0);
+
+	Dynamic = UMaterialInstanceDynamic::Create(Material,this);
+	if (Dynamic)
+	{
+		WeaponMesh->SetMaterial(0,Dynamic);
+		Dynamic->SetScalarParameterValue(TEXT("Fade"),Fade);
+	}
+}
+
+
 // Called when the game starts or when spawned
 void ASMProjectile::BeginPlay()
 {
@@ -37,18 +60,20 @@ void ASMProjectile::BeginPlay()
 	MovementComponent->Velocity = ShootDirection * MovementComponent->InitialSpeed;
 	WeaponMesh->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
 
-	Material = WeaponMesh->GetMaterial(0);
-
-	UMaterialInstanceDynamic * Dynamic = UMaterialInstanceDynamic::Create(Material,this);
+	ChangeMaterialParam();
 	
-	WeaponMesh->SetMaterial(0,Dynamic);
-	Dynamic->SetScalarParameterValue(TEXT("Fade"), 0.f);
 }
 
 void ASMProjectile::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	//проверить работает ли мин, я забыл про него
+	//Fade = FMath::Min(Fade - UpdateModifier * DeltaTime, MAXFade);
+	Fade -= UpdateModifier * DeltaTime;
+	Dynamic->SetScalarParameterValue(TEXT("Fade"),Fade);
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Char speed: %f"), Fade));
 
+	
 	// Creating a FHitResult to store the hit result
 	FHitResult HitResult;
 

@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "SMBaseWeapon.generated.h"
 
+class ASMProjectile;
 class ASMBaseCharacter;
 class USkeletalMeshComponent;
 UCLASS()
@@ -27,7 +28,18 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category="Weapon")
 	FName WeaponAttachPointName = "Weapon_R";
 
+
+
 public:
+	UPROPERTY(EditDefaultsOnly,BlueprintReadWrite, Category = "Spawning")
+	TSubclassOf<ASMProjectile> ActorToSpawn;
+	UPROPERTY(EditDefaultsOnly)
+	ASMProjectile* CurrentProjectile;
 	virtual void MakeShot(){}
 	FVector GetMuzzleSocketLocation() const;
+	AActor* GetTarget() const;
+	virtual FVector ProjectileDirectionToTarget(AActor* Target, ASMProjectile* Projectile);
+	FVector ProjectileDirection();
+	virtual ASMProjectile* CreateProjectile(TSubclassOf<ASMProjectile>* SpawnedActor, const FTransform& SpawnProjectileTransform) const;
+	FTransform SpawnTransform(FRotator ProjectileRotation, FVector ProjectileSpawnLocation);
 };

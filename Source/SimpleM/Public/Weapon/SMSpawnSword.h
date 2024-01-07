@@ -23,6 +23,7 @@ class SIMPLEM_API ASMSpawnSword : public ASMBaseWeapon
 	virtual void StartFire() override;
 
 	virtual void MakeShot() override;
+	ASMProjectile* CreateProjectile(TSubclassOf<ASMProjectile>* SpawnedActor, const FTransform& SpawnProjectileTransform) const;
 
 	UPROPERTY()
 	ASMBaseCharacter* BaseCharacter;
@@ -36,8 +37,8 @@ public:
 	void SpawnActorsInSphereRadius();
 public:
 	
-	UPROPERTY(EditAnywhere, Category = "Spawning")
-	TSubclassOf<AActor> ActorToSpawn;
+	//UPROPERTY(EditAnywhere, Category = "Spawning")
+	//TSubclassOf<AActor> ActorToSpawn;
 
 	// The radius within which actors will be spawned
 	UPROPERTY(EditAnywhere, Category = "Spawning")
@@ -50,7 +51,12 @@ public:
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 	FColor SphereColor =  FColor::Red;
+	
+	//UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Weapon")
+	//TSubclassOf<ASMProjectile> ProjectileClass;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="Weapon")
-	TSubclassOf<ASMProjectile> ProjectileClass;
+private:
+	void AddProjMovement();
+
+	void MatFade();
 };
